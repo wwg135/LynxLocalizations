@@ -55,7 +55,7 @@ jobs:
           echo -e "更新时间：${{ env.logT }}" >> release.txt
           echo -e "> - 增加Lynx2的中文汉化，由M哥编译！" >> release.txt
       
-        - name: Build Lynx
+      - name: Build Lynx
         run: |
           ./build.sh
 
