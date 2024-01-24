@@ -69,4 +69,4 @@ jobs:
           latest: true
           token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
           files: |
-           ./packages/*.deb
+           ./LynxLocalizations/com.mtac.lynxtwo.localizations/packages/*.deb
