@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd LynxLocalizations/com.mtac.lynxtwo.localizations
+cd com.mtac.lynxtwo.localizations
 
 rm -r .theos
 
