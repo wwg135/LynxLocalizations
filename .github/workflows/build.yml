@@ -1,0 +1,74 @@
+name: Build and Package
+
+on:
+  push:
+    branches: 
+      - 2.4.7
+  pull_request:
+    branches: 
+      - 2.4.7
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+env:
+  VERSION: '2.4.7'
+
+jobs:
+  build:
+    name: Build Lynx
+    runs-on: macos-latest
+    environment: Auto Build And Release
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+
+      - name: Pre theos
+        run: |
+         curl -fsSL https://raw.githubusercontent.com/roothide/theos/master/bin/install-theos > theos
+         sed -i '' 's/get_sdks$//g' theos
+         bash theos
+
+      - name: Setup Environment
+        run: echo "THEOS=~/theos" >> $GITHUB_ENV
+
+      - name: Set env
+        run: |
+          sT=$(TZ=UTC-8 date +'%S')
+          echo "msT=$(date -j -f "%Y-%m-%d %H:%M:%S" "$(TZ=UTC-8 date +'%Y-%m-%d %H:%M'):${sT}" +%s)" >> $GITHUB_ENV
+          echo "logT=$(TZ=UTC-8 date +'%Y年%m月%d %H:%M'):${sT}" >> $GITHUB_ENV
+
+      - name: Print env
+        run: |
+          echo ${{ env.VERSION }}
+          echo ${{ env.msT }}
+          echo ${{ env.logT }}
+
+      - name: Pre body
+        run: |
+          echo -e "更新时间：${{ env.logT }}" >> release.txt
+          echo -e "> - 增加Lynx2的中文汉化，由M哥编译！" >> release.txt
+      
+      - name: Build Bootstrap
+        run: |
+          ./build.sh
+
+      - name: Release deb
+        uses: softprops/action-gh-release@v1
+        with:
+          name: ${{ env.VERSION }}
+          tag_name: ${{ env.msT }}
+          target_commitish: main
+          body_path: release.txt
+          latest: true
+          token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
+          files: |
+           packages/*.deb
