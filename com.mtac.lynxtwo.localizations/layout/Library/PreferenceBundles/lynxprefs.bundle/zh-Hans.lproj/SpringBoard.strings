@@ -81,7 +81,7 @@
 "ALERTS" = "警告";
 "ALERT_SUBTITLE" = "在按钮之间隐藏分隔符";
 "TAB_BARS" = "标签栏";
-"TAB_BAR_BADGES" = "标签栏徽标";
+"TAB_BAR_BADGES" = "标签栏角标";
 "TINT_BADGES_SUBTITLE" = "使用应用程序主题颜色";
 "BOTTOM_SHADOW_SUBTITLE" = "隐藏底部阴影视图";
 "HIDE_LABELS" = "隐藏标签";
