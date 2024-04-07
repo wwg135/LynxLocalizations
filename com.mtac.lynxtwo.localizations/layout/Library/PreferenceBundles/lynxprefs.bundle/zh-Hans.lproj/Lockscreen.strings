@@ -149,3 +149,6 @@
 "QUIET_MODE" = "静音模式";
 "HIDE_QUIET_MODE_INDICATOR" = "隐藏睡眠指示器";
 "HIDE_QUIET_MODE_INDICATOR_SUBTITLE" = "当启用睡眠时间关注时，从锁屏底部移除睡眠指示器";
+"Focus Indicator" = "专注指示器";
+"Hide Focus Indicator" = "隐藏专注指示器";
+"HIDE_ALL_FOCUS_SUBTITLE" = "隐藏任何地方的指示器";
