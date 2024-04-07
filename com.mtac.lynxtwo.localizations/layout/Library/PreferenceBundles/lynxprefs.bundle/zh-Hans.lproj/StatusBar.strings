@@ -112,3 +112,5 @@
 "SHOW_LOCKSCREEN_STATUSBAR_TIME" = "始终显示时间";
 "SHOW_LOCKSCREEN_STATUSBAR_TIME_SUBTITLE" = "在锁屏上的状态栏显示时间（iPhone X+）";
 "HIDE_BEDTIME_ITEM" = "隐藏睡眠时间图标";
+"Use Adjacent Date" = "使用相邻日期";
+"MOVE_DATE_SIDE_SUBTITLE" = "移动日期位置";
