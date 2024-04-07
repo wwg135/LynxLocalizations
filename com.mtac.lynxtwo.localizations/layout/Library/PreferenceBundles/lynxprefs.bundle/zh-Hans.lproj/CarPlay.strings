@@ -29,5 +29,5 @@
 "CUSTOM_ICON_SIZE_SUBTITLE" = "设置显示图标的大小";
 "HIDE_BLUR_VIEW" = "隐藏模糊视图";
 "HIDE_BLUR_VIEW_SUBTITLE" = "从状态栏中移除模糊效果";
-"Show Weather Icon" = "显示天气图标";
+"SHOW_WEATHER_ICON" = "显示天气图标";
 "SHOW_WEATHER_ICON_SUBTITLE" = "在状态栏显示天气图标";
