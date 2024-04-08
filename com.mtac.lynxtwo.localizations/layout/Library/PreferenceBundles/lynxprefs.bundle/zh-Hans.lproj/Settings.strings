@@ -40,3 +40,6 @@
 "TITLE" = "标题";
 "HIDE_SETTINGS_TITLE" = "隐藏标题";
 "HIDE_SETTINGS_TITLE_SUBTITLE" = "从主设置页面中删除'设置'标签";
+"SERIAL_NUMBER" = "序列号";
+"HIDE_SERIAL_NUMBER" = "隐藏序列号";
+"HIDE_SERIAL_NUMBER_SUBTITLE" = "在关于部分隐藏序列号,复制的文本不受影响";
