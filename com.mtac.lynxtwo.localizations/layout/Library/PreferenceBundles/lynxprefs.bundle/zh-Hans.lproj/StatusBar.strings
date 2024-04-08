@@ -114,3 +114,5 @@
 "HIDE_BEDTIME_ITEM" = "隐藏睡眠时间图标";
 "MOVE_DATE_SIDE" = "使用相邻日期";
 "MOVE_DATE_SIDE_SUBTITLE" = "将日期移动时间旁边";
+"HIDE_NETWORKS_SPEED_LS" = "在锁屏隐藏";
+"HIDE_NETWORKS_SPEED_LS_SUBTITLE" = "在锁屏上移除速度标签";
