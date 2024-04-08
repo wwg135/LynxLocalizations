@@ -36,3 +36,6 @@
 "CANCEL" = "取消";
 “GRID_SPACING” = “网格间距：”;
 “PAGE_SCALE” = “页面比例：”;
+"CUSTOM_PAGE_RADIUS" = "使用自定义半径";
+"CUSTOM_PAGE_RADIUS_SUBTITLE" = "设置页面的半径大小";
+"CARD_RADIUS" = “卡片半径：”;
