@@ -205,3 +205,7 @@
 "HIDE_SHARE_APPS" = "隐藏分享应用程序";
 "HIDE_SHARE_APPS_SUBTITLE" = "从分享菜单中移除应用程序建议";
 "VOLUME_STEPS" = "音量步进";
+"USE_CUSTOM_PINNED_APPS" = "使用自定义固定应用程序";
+"USE_CUSTOM_PINNED_APPS_SUBTITLE" = "将应用设置为在Spotlight中显示为建议";
+"DISPLAY_AS_ICON" = "图标形式显示";
+"DISPLAY_AS_ICON_SUBTITLE" = "用第一个应用程序的图标替换文件夹图标";
